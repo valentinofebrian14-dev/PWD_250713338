@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <title>Formulir Pendaftaran Anggota Baru Organisasi</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="form-container">
+        <h1>Pendaftaran Anggota Organisasi Mahasiswa</h1>
+        <p class="subtitle">Silakan isi formulir di bawah ini dengan data diri yang valid untuk bergabung bersama komunitas kami.</p>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informasi Pribadi</legend>
+                
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required="required" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="nim">Nomor Induk Mahasiswa (NIM):</label>
+                    <input type="text" id="nim" name="nim" placeholder="Contoh: 250713338" required="required" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Alamat Email Aktif:</label>
+                    <input type="email" id="email" name="email" placeholder="nama@student.uajy.ac.id" required="required" />
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="Laki-laki" /> Laki-laki</label>
+                        <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferensi Divisi &amp; Alasan</legend>
+                
+                <div class="form-group">
+                    <label for="divisi">Pilihan Divisi Utama:</label>
+                    <select id="divisi" name="divisi">
+                        <option value="bph">Badan Pengurus Harian (BPH)</option>
+                        <option value="kominfo">Komunikasi &amp; Informasi (Kominfo)</option>
+                        <option value="kreatif">Kreatif &amp; Desain Media</option>
+                        <option value="kastrat">Kajian Strategis &amp; Advokasi</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="alasan">Motivasi Bergabung:</label>
+                    <textarea id="alasan" name="alasan" rows="4" placeholder="Ceritakan singkat alasan Anda ingin bergabung..."></textarea>
+                </div>
+            </fieldset>
+
+            <div class="button-group">
+                <input type="submit" value="Kirim Pendaftaran" class="btn-submit" />
+                <input type="reset" value="Reset Formulir" class="btn-reset" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
